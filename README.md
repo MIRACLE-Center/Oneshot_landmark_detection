@@ -11,7 +11,7 @@ python >= 3.5; pytorch >= 1.1.0; torchvision >= 0.6
 
 extra package: **tutils** 
 
-`pip install git+http://gitee.com/transcendentsky/tutils.git`
+`pip install trans-utils`
 
  
 
