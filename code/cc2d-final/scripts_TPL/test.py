@@ -149,7 +149,7 @@ if __name__ == "__main__":
     # Parse command line options
     parser = argparse.ArgumentParser(description="Train a cgan Xray network")
     parser.add_argument("--tag", default='gold', help="position of the output dir")
-    parser.add_argument("--dataset", default='head', help="dataset")
+    parser.add_argument("--dataset", default='head', choices=['head', 'hand', 'leg', 'chest'], help="dataset")
     parser.add_argument("--epoch", default=89, help="position of the output dir")
     args = parser.parse_args()
 

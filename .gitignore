@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+.vscode/
 *.py[cod]
 *$py.class
 
@@ -160,5 +161,7 @@ cython_debug/
 #.idea/
 
 final_runs/*
+!final_runs/.gitkeep
 *.zip
 dataset/*
+!dataset/.gitkeep

@@ -142,7 +142,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train Unet landmark detection network")
     parser.add_argument("--tag", default='gold', help="name of the run")
     parser.add_argument("--config_file", default="config.yaml", help="default configs")
-    parser.add_argument("--dataset", default='head', help="dataset")
+    parser.add_argument("--dataset", default='head', choices=['head', 'hand', 'leg', 'chest'], help="dataset")
     parser.add_argument("--test", type=int, default=0, help="Test Mode")
     parser.add_argument("--epoch", type=int, default=299, help="Test Mode")
     args = parser.parse_args()

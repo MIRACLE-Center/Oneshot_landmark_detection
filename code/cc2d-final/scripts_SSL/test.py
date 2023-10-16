@@ -138,7 +138,7 @@ if __name__ == "__main__":
     # Parse command line options
     parser = argparse.ArgumentParser(description="Train Unet landmark detection network")
     parser.add_argument("--tag", default='gold', help="name of the run")
-    parser.add_argument("--dataset", default='head', help="dataset")
+    parser.add_argument("--dataset", default='head', choices=['head', 'hand', 'leg', 'chest'], help="dataset")
     parser.add_argument("--test", type=int, default=0, help="Test Mode")
     parser.add_argument("--epoch", type=int, default=0, help="Test Mode")
     parser.add_argument("--finetune", type=int, default=1, help="Test Mode")

@@ -53,7 +53,7 @@ if __name__ == "__main__":
     # Parse command line options
     parser = argparse.ArgumentParser(description="Train Unet landmark detection network")
     parser.add_argument("--tag", default='gold', help="name of the run")
-    parser.add_argument("--dataset", default='head', help="dataset")
+    parser.add_argument("--dataset", default='head', choices=['head', 'hand', 'leg', 'chest'], help="dataset")
     parser.add_argument("--epoch", type=int, default=0, help="default configs")
     parser.add_argument("--stage_probmap", type=float, default=1, help="Test Mode")
     args = parser.parse_args()
@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
     # Create runs dir
     tag = str(datetime.datetime.now()).replace(' ', '-') if args.tag == '' else args.tag
-    tag_tpl = 'tpl_scratch' if not args.stage_probmap else 'tpl_final'
+    # tag_tpl = 'tpl_scratch' if not args.stage_probmap else 'tpl_final'
     tag_ssl = 'ssl_scratch' if not args.stage_probmap else 'ssl_finetune'
 
     ssl_dir = os.path.join("../../final_runs/", tag, tag_ssl)
