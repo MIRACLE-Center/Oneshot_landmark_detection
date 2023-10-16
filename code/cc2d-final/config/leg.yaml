@@ -1,0 +1,4 @@
+dataset:
+  dataset_pth : '../../dataset/leg/'
+  num_landmarks : 20
+  eval_radius : [2, 4, 6, 8] 

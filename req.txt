@@ -1,0 +1,13 @@
+
+batchgenerators==0.25
+opencv-python==4.8.0.76
+torch==2.0.0
+torchvision==0.15.0
+tqdm
+yacs
+yaml
+yamlloader==1.3.2
+pickle
+pillow
+imgaug
+

@@ -1,0 +1,4 @@
+dataset:
+  dataset_pth : '../../dataset/chest/'
+  num_landmarks : 6
+  eval_radius : [3, 6, 9, 12]

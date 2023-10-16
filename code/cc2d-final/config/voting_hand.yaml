@@ -1,0 +1,10 @@
+train:
+  batch_size : 4
+  num_workers : 8
+  learning_rate : 0.0003
+  decay_step : 30
+  decay_gamma : 0.1
+  num_epochs : 90
+  save_seq : 30
+  loss_lambda : 2.0
+  input_size : [384, 384]

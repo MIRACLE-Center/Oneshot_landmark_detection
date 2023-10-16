@@ -1,0 +1,4 @@
+dataset:
+  dataset_pth : '../../dataset/hand/'
+  num_landmarks : 37
+  eval_radius : [2, 4, 7, 10]

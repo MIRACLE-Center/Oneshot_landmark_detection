@@ -1,0 +1,12 @@
+train:
+  batch_size : 4
+  num_workers : 8
+  learning_rate : 0.001
+  decay_step : 50
+  decay_gamma : 0.5
+  num_epochs : 300
+  save_seq : 10
+  loss_lambda : 0.001
+  input_size : [768, 384]
+test:
+  id_oneshot : [118]
